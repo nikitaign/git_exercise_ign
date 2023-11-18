@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>ConverterNew.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6897bb;}
+.s3 { color: #6a8759;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+ConverterNew.java</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">java.util.Scanner</span><span class="s0">;</span>
+
+<span class="s0">public class </span><span class="s1">ConverterNew {</span>
+        <span class="s0">public static void </span><span class="s1">main(String[] args) {</span>
+            <span class="s0">final double </span><span class="s1">ROUBLES_PER_DOLLAR = </span><span class="s2">92.12</span><span class="s0">;</span>
+
+            <span class="s1">Scanner scanner = </span><span class="s0">new </span><span class="s1">Scanner(System.in)</span><span class="s0">;</span>
+            <span class="s1">System.out.print(</span><span class="s3">&quot;Введите сумму в долларах: &quot;</span><span class="s1">)</span><span class="s0">;</span>
+            <span class="s0">int </span><span class="s1">dollars = scanner.nextInt()</span><span class="s0">;</span>
+
+            <span class="s0">int </span><span class="s1">lastDigit = dollars % </span><span class="s2">10</span><span class="s0">;</span>
+
+            <span class="s0">if </span><span class="s1">(dollars &gt;=</span><span class="s2">5 </span><span class="s1">&amp;&amp; dollars &lt;=</span><span class="s2">20</span><span class="s1">)</span>
+                <span class="s1">System.out.println(dollars + </span><span class="s3">&quot; американских долларов&quot;</span><span class="s1">)</span><span class="s0">;</span>
+                <span class="s0">else if </span><span class="s1">(lastDigit == </span><span class="s2">1</span><span class="s1">)</span>
+                    <span class="s1">System.out.println(dollars + </span><span class="s3">&quot; американский доллар&quot;</span><span class="s1">)</span><span class="s0">;</span>
+                <span class="s0">else if </span><span class="s1">(lastDigit &gt;= </span><span class="s2">2 </span><span class="s1">&amp;&amp; lastDigit &lt;=</span><span class="s2">4</span><span class="s1">)</span>
+                    <span class="s1">System.out.println(dollars + </span><span class="s3">&quot; американских доллара&quot;</span><span class="s1">)</span><span class="s0">;</span>
+                    <span class="s0">else </span><span class="s1">System.out.println(dollars + </span><span class="s3">&quot; американских долларов&quot;</span><span class="s1">)</span><span class="s0">;</span>
+
+            <span class="s0">double </span><span class="s1">roubles = ROUBLES_PER_DOLLAR * dollars</span><span class="s0">;</span>
+            <span class="s1">System.out.println(</span><span class="s3">&quot;Сумма в российских рублях: &quot; </span><span class="s1">+ roubles)</span><span class="s0">;</span>
+
+        <span class="s1">}</span>
+<span class="s1">}</span>
+</pre>
+</body>
+</html>
