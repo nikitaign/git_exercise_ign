@@ -39,3 +39,33 @@ Date:   Sat Nov 18 15:49:44 2023 +0300
     Project Converter V2
 
 Описание: улучшен код программы. Теперь показывает количество долларов и надпись "американск** доллар**" с правильными окончаниями.
+
+------------------------------------------------------------------------
+
+commit cb2dabcbc12ab31816d99e56d2914882d9e48acc
+Author: nikitaign <nikitaign2004@gmail.com>
+Date:   Sat Nov 18 15:49:20 2023 +0300
+
+    FirstVer
+
+    Project Converter V1
+
+Описание: добавлен основной код программы проекта.
+
+------------------------------------------------------------------------
+
+commit a8427fab71e5753ccc6decbf9eb0bc5876ba2ff2
+Author: nikitaign <nikitaign2004@gmail.com>
+Date:   Wed Nov 1 16:19:42 2023 +0300
+
+    Create hello.txt
+
+Описание: создан пустой файл.
+
+------------------------------------------------------------------------
+
+commit 9efe2ac3e1bb94555750b6fccdbb6324e19ffce4
+Author: nikitaign <nikitaign2004@gmail.com>
+Date:   Wed Nov 1 16:13:14 2023 +0300
+
+    Initial commit
